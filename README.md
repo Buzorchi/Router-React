@@ -1,4 +1,4 @@
-# Project: BuzzLife Blog
+# Project: React-Router
 
 This is part of the projects done during react training in purple academy January 2024
 This comprises of handling forms, creating dashboard routing, creating budgets and calling APIs
@@ -23,7 +23,7 @@ https://router-react-rho.vercel.app/
 
 
 ## Functionalities 
-- Dashboars
+- Dashboards
 - Form
 - Create budget
 
@@ -78,7 +78,7 @@ Open `http://localhost:3000/` in your browser.
 
 👤 *Chibuzor Muoghalu*
 
-Github | Twitter | LinkedIn
+Github | LinkedIn
 
 
 ## 🤝 Contributing
