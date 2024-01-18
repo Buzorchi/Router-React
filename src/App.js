@@ -6,13 +6,15 @@ import Props from "./component/test/Props";
 import AddForm from "./component/budget/AddForm";
 import Product from "./component/pages/Product";
 import FormPage from "./component/pages/FormPage";
-import Dashboard from "./component/pages/Dashboard";
 import Home from "./component/pages/Home";
-import HomeDash from "./component/pages/HomeDash";
-import Service from "./component/pages/Service";
-import Account from "./component/pages/Account";
-import Transaction from "./component/pages/Transaction";
-import Wallet from "./component/pages/Wallet";
+import Dashboard from "./component/dashboard/Dashboard";
+import HomeDash from "./component/dashboard/HomeDash";
+import Service from "./component/dashboard/Service";
+import Account from "./component/dashboard/Account";
+import Transaction from "./component/dashboard/Transaction";
+import Wallet from "./component/dashboard/Wallet"
+
+
 
 
 
