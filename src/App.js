@@ -1,6 +1,7 @@
 // import ReactDOM from "react-dom/client";
 import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from "react-router-dom"
 import './App.css'
+import './component/product/HomeProduct.css'
 import './index.css'
 import Props from "./component/test/Props";
 import AddForm from "./component/budget/AddForm";
@@ -13,6 +14,9 @@ import Service from "./component/dashboard/Service";
 import Account from "./component/dashboard/Account";
 import Transaction from "./component/dashboard/Transaction";
 import Wallet from "./component/dashboard/Wallet"
+import HomeProduct from "./component/product/HomeProduct";
+import ProductLists from "./component/product/ProductLists";
+import ProductDetails from "./component/product/ProductDetails";
 
 
 
@@ -34,7 +38,10 @@ const router = createBrowserRouter(
       <Route path="/account" element={<Account/>}></Route>
       <Route path="/transaction" element={<Transaction/>}></Route>
       <Route path="/wallet" element={<Wallet/>}></Route>
-
+      <Route path="/productApi" element={<HomeProduct/>}></Route>
+      <Route path="/productApi/:productId" element={<ProductDetails/>}></Route>
+      <Route path="/productList" element={<ProductLists/>}></Route>
+      
 
     </>
   )

@@ -42,7 +42,7 @@ const Product = () => {
           <li>{item.description}</li>
           <div className="product"> 
             {item.images.map((x) => (
-              <div key={x} >
+              <div key={x}>
                 <img src={x} alt=""/>
                 </div>
             ))}

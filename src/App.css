@@ -23,6 +23,9 @@ body{
 }
 .btn-disabled{
   background-color: grey;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
 }
 .btn-success{
   background-color: green;
@@ -68,7 +71,7 @@ body{
 }
 
 .content {
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 .form {

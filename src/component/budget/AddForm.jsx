@@ -11,13 +11,14 @@ const AddForm = () => {
           transactionTitle: "",
           amount: ""
         }}
-        validate={(values) => {
+        validate={values => {
           const errors = {};
           if (!values.transactionTitle) {
             errors.transactionTitle = "Enter title";
           }
           if (!values.amount) {
             errors.amount = "Enter amount";
+          }else if (!/^[0-9]+$/.test(values.amount)){
           }
           return errors;
         }}
@@ -36,7 +37,7 @@ const AddForm = () => {
           handleBlur,
           handleSubmit,
           isSubmitting,
-          /* and other goodies */
+          //  and other goodies 
         }) => (
           <form onSubmit={handleSubmit} className="formBudget">
             <h1 className='font-bold text-lg mb-4'>Personal Budget Dashboard</h1>
@@ -50,14 +51,7 @@ const AddForm = () => {
                 value={values.transactionTitle}
                 className='py-1 px-3 border mr-6'
               />
-              {errors.transactionTitle && touched.transactionTitle && (
-                <p className='text-red-600'>{errors.transactionTitle}</p>
-
-              )}
-
-              
-
-            
+              {errors.transactionTitle && touched.transactionTitle && errors.transactionTitle}
               <input
                 type="number"
                 placeholder='0'
@@ -67,13 +61,11 @@ const AddForm = () => {
                 value={values.amount}
                 className='py-1 px-3 border mr-6 '
               />
-              {errors.amount && touched.amount && (
-              <p className='text-red-600'>{errors.amount}</p>
-              )}
+              {errors.amount && touched.amount && errors.amount}
 
-            <button type="submit"  className={(values.transactionTitle === " " || values.amount === " ") ? "btn-disabled" : "btn-success"}>
+            <button type="submit" className={(values.transactionTitle === "" || values.amount === "") ? "btn-disabled" : "btn-success"}>
               Add Transaction
-              {/* disabled = {!values.transactionTitle || !values.amount || isSubmitting} */}
+               {/* disabled = {!values.transactionTitle || !values.amount || isSubmitting}  */}
             </button>
             </div>
           </form>
