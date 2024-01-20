@@ -26,6 +26,7 @@ https://router-react-rho.vercel.app/
 - Dashboards
 - Form
 - Create budget
+- Search for products on my shop
 
 ## Setup
 
@@ -33,45 +34,15 @@ sh
 $ git clone https://github.com/Buzorchi/Router-React
 
 
-Navigate to the extracted folder
-sh
-
-
-Install the gems
-sh
-
-
-
-Create the database
-sh
-$ 
-
-
-Run the migrations
-sh
-
-
-Run seed migrations
-sh
-
-
-
 
 ### Usage
 
 Start server with:
-
 sh
     $npm run start
 
 
 Open `http://localhost:3000/` in your browser.
-
-### Run tests
-
-
-    rpsec
-
 
 
 ## Author
