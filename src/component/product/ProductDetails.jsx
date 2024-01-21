@@ -48,7 +48,6 @@ const ProductDetails = () => {
                   </div>
                 ))}
            
-              {/* <img src={data.images} alt="" /> */}
               <li>{data.title}</li>
               <li>{data.brand}</li>
               <li>{data.description}</li>
@@ -57,8 +56,7 @@ const ProductDetails = () => {
           )}
         </div>
       )}
-      {/* <p>Product Details</p>
-     <p>this product has {productId} as it ID</p>  */}
+     
     </div>
     </>
   );

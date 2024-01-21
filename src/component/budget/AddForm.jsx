@@ -1,5 +1,6 @@
 import React from 'react'
 import { Formik } from "formik";
+import { Link } from 'react-router-dom';
 
 
 const AddForm = () => {
@@ -40,7 +41,11 @@ const AddForm = () => {
           //  and other goodies 
         }) => (
           <form onSubmit={handleSubmit} className="formBudget">
+            <div className='flex gap-3'>
+            <Link to="/"> {' < '}</Link>
             <h1 className='font-bold text-lg mb-4'>Personal Budget Dashboard</h1>
+
+            </div>
               <div className='flex'>
               <input
                 type="text"

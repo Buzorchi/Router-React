@@ -1,7 +1,6 @@
 // import ReactDOM from "react-dom/client";
 import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from "react-router-dom"
 import './App.css'
-import './component/product/HomeProduct.css'
 import './index.css'
 import Props from "./component/test/Props";
 import AddForm from "./component/budget/AddForm";

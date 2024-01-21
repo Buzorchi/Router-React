@@ -5,8 +5,9 @@ const Header = () => {
   return (
     <div>
       <header className='flex justify-between items-center md:px-10 px-2 bg-blue-500 h-12 text-white font-normal text-sm md:font-medium md:text-lg '>
-            <div >
-                <p>My Shop</p>
+            <div className='flex gap-3'>
+              <Link to="/"> {' < '}</Link>
+               <Link to="/productApi"><p>My Shop</p></Link> 
             </div>
             <ul className='flex gap-6'>
                 <Link to="/productApi"><li>Home</li></Link>
