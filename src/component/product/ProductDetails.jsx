@@ -13,7 +13,7 @@ const ProductDetails = () => {
   let endpoint = `https://dummyjson.com/products/${productId}`;
 
   const getData = async () => {
-    setLoading(false);
+    setLoading(true);
     try {
       const response = await axios.get(endpoint);
       setData(response.data);
@@ -36,7 +36,7 @@ const ProductDetails = () => {
     <div className="mx-auto w-[300px] mt-16">
       <p className="font-medium text-lg items-center ">Details</p>
       <p>{productId}</p>
-      
+
       {loading ? (
         <p className="font-medium text-lg">Loading...</p>
       ) : (
