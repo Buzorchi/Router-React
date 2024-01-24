@@ -44,7 +44,7 @@ const ProductLists = () => {
     } else if (category) {
       url += `/category/${category}`;
     } else if (select) {
-      url += `?&select=${select}`
+      url += `?&price/${select}`
     }
     setLoading(true);
 
@@ -96,7 +96,7 @@ const ProductLists = () => {
               className="focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-50 shadow-sm text-xs w-[300px] border rounded-sm h-[35px] pl-4 "
             >
               <option value="">All Categories</option>
-              {categories?.map((category) => (
+              {categories.map((category) => (
                 <option value={category} key={category} className="">
                   {category.charAt(0).toUpperCase() + category.slice(1)}
                 </option>
@@ -123,7 +123,7 @@ const ProductLists = () => {
             {products &&
               products?.map((products) => (
                 <li key={products.id} className="text-sm font-light">
-                  <Link to={`/products/${products.id}`}>{products.title}</Link>
+                  <Link to={`/productApi/${products.id}`}>{products.title}</Link>
                 </li>
               ))}
           </ul>

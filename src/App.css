@@ -52,14 +52,7 @@ body{
   padding: 20px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: right;
-  background-color: #333;
-  padding: 10px;
-  gap: 70px;
-  padding-right: 70px;
-}
+
 
 .nav-link {
   text-decoration: none;
@@ -67,7 +60,7 @@ body{
   font-weight: bold;
 }
 .nav-link:hover{
-  color: blueviolet;
+  color: slategray;
 }
 
 .content {
