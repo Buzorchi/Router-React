@@ -11,7 +11,7 @@ const HomeProduct = () => {
   const [loading, setLoading] = useState(false);
 
   const getData = async () => {
-    setLoading(false);
+    setLoading(true);
     try {
       const response = await axios.get(
         "https://dummyjson.com/products?limit=10"
