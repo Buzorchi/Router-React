@@ -34,7 +34,7 @@ const HomeProduct = () => {
       <div className="flex flex-col justify-center items-center mt-14 ">
         <p className="font-medium text-lg">Welcome to my shop</p>
         <p className="text-sm font-normal pt-4">
-          Discover a world of amaxing products!
+          Discover a world of amazing products!
         </p>
         <Link to="/productList">
           <button className="text-white bg-blue-800 hover:bg-blue-500 font-medium text-sm rounded-sm py-1 px-2 mt-4">

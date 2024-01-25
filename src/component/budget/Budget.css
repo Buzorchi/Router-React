@@ -1,0 +1,32 @@
+.App {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    margin: 20px 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid grey;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+  }
